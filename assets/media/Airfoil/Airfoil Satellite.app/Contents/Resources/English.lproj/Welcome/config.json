@@ -1,0 +1,16 @@
+{
+	"size": "{800, 627}",
+	"ace-required": false,
+	"tour": {
+		"type": "single-page",
+		"path": "Welcome/tour.html",
+		"css-states": [
+			"state-1",
+			"state-2",
+			"state-3",
+			"state-4",
+		],
+	},
+	"tour-counter-active-color": [0.39, 0.74, 0.89, 1],
+	"tour-counter-inactive-color": [0.665, 0.696, 0.706, 1]
+}

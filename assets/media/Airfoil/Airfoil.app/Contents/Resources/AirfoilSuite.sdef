@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<!-- declare the namespace for using XInclude so we can include the standard suite -->
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+	
+	<!-- use XInclude to include the standard suite -->
+    <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+	
+	<!-- specific suite(s) for the application follow... -->
+
+	<suite name="Airfoil" code="RAAF">
+		
+			<class name="application" code="capp" inherits="application" description="The application's top-level scripting object.">
+				<cocoa class="SSApplication"/>
+				
+					<element description="A speaker on the network" type="speaker" access="r">
+						<cocoa key="allSpeakers"/>
+					</element>
+					<element description="The applications available to send audio to the speakers." type="application source" access="rw">
+						<cocoa key="applicationSources"/>
+					</element>
+					<element description="The audio devices available to send audio to the speakers." type="device source" access="r">
+						<cocoa key="deviceSources"/>
+					</element>
+					<element description="The system audio source available to send audio to the speakers." type="system source" access="r">
+						<cocoa key="systemAudioSources"/>
+					</element>
+				
+					<property hidden="yes" name="properties" code="pALL" description="All of the object's properties." type="record" access="rw"/>
+					<property name="name" code="pnam" description="The name of the application." type="text" access="r"/>
+					<property name="version" code="vers" description="The version of the application." type="text" access="r"/>
+					<property name="frontmost" code="pisf" description="Is this the frontmost (active) application?" type="boolean" access="r">
+						<cocoa key="isActive"/>
+					</property>
+					<property name="current audio source" code="CurA" description="The source of the audio sent to the speakers. " type="audio source" access="rw">
+						<cocoa key="currentSource"/>
+					</property>
+					<property name="linked volume" code="LVol" description="Is the volume of the speakers linked the the system volume?" type="boolean" access="rw">
+						<cocoa key="volumeLinked"/>
+					</property>
+				
+			</class>
+			<class name="speaker" code="AFSp" description="A speaker on the network">
+				<cocoa class="SSSpeaker"/>
+				
+					<property name="name" code="pnam" description="The speaker name." type="text" access="r"/>
+					<property name="volume" code="Vol " description="The volume of the speaker (between 0 and 1). If the volume is linked to the system volume, this property cannot be set." type="real" access="rw"/>
+					<property name="connected" code="Conn" description="Is the application connected to the speaker?" type="boolean" access="r"/>
+					<property name="bonjourName" code="bjNm" description="The Bonjour name of the speaker. This property was temporarily added in Airfoil 4.8.12 and may be removed in a future version." type="text" access="r">
+						<cocoa key="longIdentifier"/>
+					</property>
+					<property name="id" code="ID  " description="The unique identifier of the speaker" type="text" access="r">
+						<cocoa key="uniqueID"/>
+					</property>
+				
+				
+					<responds-to command="connect to">
+						<cocoa method="handleScriptConnectToSpeakers:"/>
+					</responds-to>
+					<responds-to command="disconnect from">
+						<cocoa method="handleScriptDisconnectFromSpeakers:"/>
+					</responds-to>
+				
+			</class>
+			<class name="audio source" code="AudS" description="A source of audio to send to the speakers">
+				<cocoa class="SSScriptAudioSource"/>
+				
+					<property name="name" code="pnam" description="The name of the audio source" type="text" access="r"/>
+					<property name="id" code="ID  " description="The unique identifier of the audio source object" type="number" access="r">
+						<cocoa key="uniqueID"/>
+					</property>
+				
+			</class>
+			<class name="application source" code="AAud" description="An application whose sound will be sent to the speakers. This is the only audio source that can be directly created by a script." inherits="audio source">
+				<cocoa class="SSScriptApplicationAudioSource"/>
+				
+					<property name="application file" code="AFil" description="The application file." type="text" access="rw">
+						<cocoa key="applicationFile"/>
+					</property>	
+				
+			</class>
+			<class name="device source" code="DAud" description="An audio device attached to the machine." inherits="audio source">
+				<cocoa class="SSScriptDeviceAudioSource"/>
+			</class>
+			<class name="system source" code="SAud" description="The internal system audio source." inherits="audio source">
+				<cocoa class="SSScriptSystemAudioSource"/>
+			</class>
+		
+			<command name="connect to" code="RAAFConn" description="Connect to the speakers">
+				<direct-parameter description="The speakers to connect to"><type type="speaker" list="yes"/></direct-parameter>
+				<parameter name="password" code="Pass" optional="yes" type="text" description="use this password to avoid the speaker password dialog from being presented.">
+					<cocoa key="password"/>
+				</parameter>
+			</command>
+			<command name="disconnect from" code="RAAFDisc" description="Disconnect from the speakers">
+				<direct-parameter description="The speakers to disconnect from"><type type="speaker" list="yes"/></direct-parameter>
+			</command>
+		
+	</suite>
+	
+</dictionary>

@@ -1,0 +1,45 @@
+body {
+	background: #102329;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+}
+
+h1 {
+	margin-top: 0px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 42px;
+	color: #37bfe7;
+}
+
+h2 {
+	margin-top: 400px;
+	font-size: 30px;
+	color: #37bfe7;
+}
+
+h3 {
+	margin-top: 490px;
+	font-weight: 300;
+	color: #fff;
+}
+
+p {
+	margin-top: 460px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+h2.higher {
+	margin-top: 370px;
+}
+
+p.higher {
+	margin-top: 430px;
+}

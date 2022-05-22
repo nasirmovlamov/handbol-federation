@@ -1,0 +1,49 @@
+@import url(./reset.css);
+
+.w-1200{
+    width: 1200px;
+}
+
+.banner-height{
+    height: 555px;
+
+}
+
+.purple-square-height{
+    height: 580px;
+}
+
+
+
+.h-641 {
+    height: 641px;
+}
+
+.h-524{
+    height: 524px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .w-1200{
+        width: 100% !important;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .banner-height{
+        height: auto;
+    
+    }
+}
+
+.m-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m-center-res {
+    margin-left: 0;
+    margin-right: 0;
+}

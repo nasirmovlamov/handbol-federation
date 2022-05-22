@@ -1,0 +1,105 @@
+p 
+{
+	text-align: center;
+	color: #000;
+}	
+
+p.firstsection
+{
+	margin: 30px 0 0 0;
+}
+
+h2 {
+	text-align: center;
+	color: #37bfe7;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+p.footerline
+{
+	margin: 30px 0 0 0;
+	color: #859398;
+	font-weight: 200;
+	font-size: 10px;
+	line-height: 12px;
+}
+	
+body 
+{ 
+	background: #fff;
+	-webkit-user-select: none; 
+	font-family: -apple-system,  '.SFNSText-Regular', 'Source Sans Pro', Helvetica, Sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px; 
+}
+
+img  
+{ 
+	-webkit-user-drag: none; 
+}
+
+a {
+	color: #0571a3;
+}
+
+#app-version, #ace-version, #repository-version, #build-date {
+	user-select: all;
+	-webkit-user-select: all;
+	color: #fff;  
+}
+
+.build-info {
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 8px;
+	border: 1px solid rgba(51,51,51,0.3);
+	display: inline-block;
+	margin: 0 auto;
+	color: #333;
+	
+}
+
+.build-info b {
+	color: #37bfe7;
+	text-align: right;
+	float: right;
+	margin-right: 5px;
+	font-weight: 500;
+}
+
+	#app-version, #ace-version, #repository-version, #build-date {
+		color: #333; 
+	}
+
+@media (prefers-color-scheme: dark) {
+	
+	p {
+		text-align: center;
+		color: #fff;
+	}
+	
+	body { 
+		background: #102329;
+		-webkit-user-select: none;
+		font-family: -apple-system,  '.SFNSText-Regular', 'Source Sans Pro', Helvetica, Sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 20px; 
+	}
+	
+	a, a:visited {
+		color: #fff;
+	}
+	
+	.build-info {
+		border: 1px solid rgba(255,255,255,0.2);
+		color: #fff;
+	}
+	
+	#app-version, #ace-version, #repository-version, #build-date {
+		color: #fff; 
+	}
+
+}
