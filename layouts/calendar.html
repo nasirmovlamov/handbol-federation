@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="http://127.0.0.1:5500">
+    <title>Document</title>
+    <link href="/assets/styles/global.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<body>
+    
+    <header class="relative w-full h-20 border-b border-white flex  items-center justify-center bg-[#2E3A59] xl:px-0 px-4">
+        <div class="w-full xl:w-320 flex justify-between items-center h-full p-5 xl:p-0">
+            <button class="xl:hidden">
+                <img src="/assets/media/icons/menu.png" alt="">
+            </button>
+            
+            <a href="#">
+                <img src="/assets/media/logos/logo.png" class="w-14 xl:w-auto"  alt="">
+            </a>
+            
+            <div class="hidden xl:flex gap-x-8 ml-10">
+                <div>
+                    <div>
+                        <div class="flex items-center justify-center gap-x-1">
+                            <span class="text-sm text-white">AHF haqqında</span> 
+                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <div class="flex items-center justify-center gap-x-1">
+                            <span class="text-sm text-white">Klublar</span> 
+                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="flex items-center justify-center gap-x-1">
+                            <span class="text-sm text-white">Handboll qaydaları</span> 
+                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="text-white text-sm">
+                    Oyun təqvimi
+                </a>
+
+                <a href="#" class="text-white text-sm">
+                    Xəbərlər
+                </a>
+
+                <div>
+                    <div>
+                        <div class="flex items-center justify-center gap-x-1">
+                            <span class="text-white text-sm">Qalereya</span> 
+                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="flex items-center justify-center gap-x-1">
+                            <span class="text-white text-sm">Arxiv</span> 
+                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="text-white text-sm">
+                    Əlaqə
+                </a>
+            </div>
+
+            <button >
+                <img src="/assets/media/icons/search.png" alt="">
+            </button>
+        </div>
+    </header>
+
+    <!-- TEQVIM -->
+    <div class="w-full  py-20">
+        <div class="flex flex-col mx-auto xl:w-320 xl:px-0 px-4">
+            <h2 class="text-4xl text-[#1A1F49]">Təqvim Mart 2022</h2>
+            <div class="flex flex-col items-center flex-wrap mt-8 gap-4 ">
+                <div name="calendar" class="w-full xl:w-138 bg-[#2A2F5B] flex-col shadow-2xl shadow-gray-900">
+                    <div name="calendar-head" class="flex text-sm md:text-base bg-white  py-4  text-[#1A1F49] px-8  xs:gap-x-10 justify-between ">
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            B.e.
+                        </div>
+
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            Ç.a.
+                        </div>
+
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            Ç.
+                        </div>
+
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            C.a.
+                        </div>
+
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            C.
+                        </div>
+
+
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            Ş.  
+                        </div>
+
+                        <div name="day" class="w-7 h-7 grid place-content-center">
+                            B.  
+                        </div>
+
+                    </div>
+                    <div name="calendar-body" class="flex text-sm md:text-base  gap-y-4 flex-wrap   py-4 px-8  justify-center xs:justify-start">
+                        <div class="flex justify-between w-full">
+                            <div class="w-7 h-7 grid place-content-center">1</div>
+                            <div class="w-7 h-7 grid place-content-center">2</div>
+                            <div class="w-7 h-7 grid place-content-center">3</div>
+                            <div class="w-7 h-7 grid place-content-center">4</div>
+                            <div class="w-7 h-7 grid place-content-center">5</div>
+                            <div class="w-7 h-7 grid place-content-center">6</div>
+                            <div class="w-7 h-7 grid place-content-center">7</div>
+                        </div>
+                        
+                        <div class="flex justify-between w-full">
+                            <div class="w-7 h-7 grid place-content-center">8</div>
+                            <div class="w-7 h-7 grid place-content-center">9</div>
+                            <div class="w-7 h-7 grid place-content-center">10</div>
+                            <div class="w-7 h-7 grid place-content-center">11</div>
+                            <div class="w-7 h-7 grid place-content-center">12</div>
+                            <div class="w-7 h-7 grid place-content-center">13</div>
+                            <div class="w-7 h-7 grid place-content-center">14</div>
+                        </div>
+                        
+                        <div class="flex justify-between w-full">
+                            <div class="w-7 h-7 grid place-content-center">15</div>
+                            <div class="w-7 h-7 grid place-content-center">16</div>
+                            <div class="w-7 h-7 grid place-content-center">17</div>
+                            <div class="w-7 h-7 grid place-content-center">18</div>
+                            <div class="w-7 h-7 grid place-content-center">19</div>
+                            <div class="w-7 h-7 grid place-content-center">20</div>
+                            <div class="w-7 h-7 grid place-content-center">21</div>
+                        </div>
+                        
+                       
+                        <div class="flex justify-between w-full">
+                            <div class="w-7 h-7 grid place-content-center">22</div>
+                            <div class="w-7 h-7 grid place-content-center">23</div>
+                            <div class="w-7 h-7 grid place-content-center">24</div>
+                            <div class="w-7 h-7 grid place-content-center">25</div>
+                            <div class="w-7 h-7 grid place-content-center">26</div>
+                            <div class="w-7 h-7 grid place-content-center">27</div>
+                            <div class="w-7 h-7 grid place-content-center">28</div>
+                        </div>
+
+                        <div class="flex justify-between w-full">
+                            <div class="w-7 h-7 grid place-content-center">29</div>
+                            <div class="w-7 h-7 grid place-content-center">30</div>
+                            <div class="w-7 h-7 grid place-content-center">31</div>
+                            <div class="w-7 h-7 grid place-content-center"></div>
+                            <div class="w-7 h-7 grid place-content-center"></div>
+                            <div class="w-7 h-7 grid place-content-center"></div>
+                            <div class="w-7 h-7 grid place-content-center"></div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="pl-8 pb-4 flex gap-x-4">
+                            <img src="/assets/media/icons/array-left.svg" />
+                            Fevral
+                        </div>
+                    </a>
+                </div>
+                
+                <div name="games" class="flex flex-wrap gap-x-4 gap-y-4  w-full items-center  gap-4">
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                        <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                                <span >Bakı</span>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                                <span>Azəryol</span>
+                            </div>
+                        </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                    <div name="game"  class="w-full xl:w-144 flex justify-between bg-[#2A2F5B] p-4"> 
+                    <div name="teams" class="flex flex-col gap-2 font-bold text-[#ADAEBF]">
+                        <div class="flex gap-2 items-center">
+                            <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team.png" alt="">
+                            <span >Bakı</span>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img class="w-8 h-8 object-cover" src="/assets/media/images/little-team-2.png" alt="">
+                            <span>Azəryol</span>
+                        </div>
+                    </div>
+
+                        <div name="detail" class="flex flex-col gap-4 text-sm">
+                            <p>16.03.2020</p>
+                            <p>ABU arena</p>
+                            <p>AZƏRBAYCAN ÇEMPİONATI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+    <footer class="bg-[#2E3A59] px-8">
+        <div class="max-w-screen-xl mx-auto flex flex-wrap py-5 gap-4">
+            <div class="flex flex-col w-48 gap-5">
+                <img src="/assets/media/logos/handboll-logo.png" width="92" height="118" alt="">
+                <p class="text-sm">
+                    AHF Copyright 2022. <br>
+                    All Right Reserved AHF
+                </p>
+            </div>
+    
+            
+    
+            <div class="flex flex-wrap gap-x-28 pt-4 font-bold">
+                <div class="flex flex-col gap-4">
+                    <a href="#"><p>AHF haqqında</p></a>
+                    <a href="#"><p>Klublar</p></a>
+                    <a href="#"><p>Handball qaydaları</p></a>
+                    <a href="#"><p>Oyun təqvimi</p></a>
+                </div>
+    
+                <div class="flex flex-col gap-4">
+                    <a href="#"><p>Xəbərlər</p></a>
+                    <a href="#"><p>Qalereya</p></a>
+                    <a href="#"><p>Arxiv</p></a>
+                    <a href="#"><p>Əlaqə</p></a>
+                </div>
+    
+                <div class="flex flex-col gap-6">
+                    <a href="#"><p>Gizlilik Siyasəti</p></a>
+                    <div class="flex gap-x-4">
+                        <a href="#">
+                            <div class="w-10 h-10 grid place-content-center border-solid rounded-full border-pink-700 border-2">
+                                <img src="/assets/media/icons/footer-instagram.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="w-10 h-10 grid place-content-center border-solid rounded-full border-pink-700 border-2">
+                                <img src="/assets/media/icons/footer-facebook.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="w-10 h-10 grid place-content-center border-solid rounded-full border-pink-700 border-2">
+                                <img src="/assets/media/icons/footer-youtube.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+            
+    
+        </div>
+    </footer>
+</body>
+</html>

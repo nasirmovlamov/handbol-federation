@@ -1,0 +1,42 @@
+@import url(./reset.css);
+@import url(./tailwind-build.css);
+@import url(./typography.css);
+
+html {
+    font-size: 16px;
+    color: white;
+    font-family: 'r';
+}
+
+h1 , h2, h3, h4, h5, h6 {
+    font-family: 'b';
+}
+
+a {
+    text-decoration: none;
+    height: auto;
+}
+
+.club-kishi-table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .club-kishi-table th, .club-kishi-table td {
+        padding: 15px ;
+    }
+}
+
+.club-kishi-table th, .club-kishi-table td {
+    padding: 10px ;
+}
+
+.pagination-active{ 
+    border-color: #E6525C;
+    background-color: #E6525C;
+    color: white;
+}

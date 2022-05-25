@@ -1,0 +1,22 @@
+{
+  "name": "handbol-federation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasirmovlamov/handbol-federation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasirmovlamov/handbol-federation/issues"
+  },
+  "homepage": "https://github.com/nasirmovlamov/handbol-federation#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
