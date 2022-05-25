@@ -1,6 +1,6 @@
 module.exports = {
   content:[
-    "./layouts/**/*.{html,js}"
+    "./layouts/**/*.{html,js}" ,
   ],
   theme: {
     extend: {
@@ -69,5 +69,7 @@ module.exports = {
     },
     
   },
-  plugins:[]
+  plugins:[
+    require('tw-elements/dist/plugin')
+  ]
 } 

@@ -40,3 +40,8 @@ a {
     background-color: #E6525C;
     color: white;
 }
+
+
+.menu-show{
+    transform: translateY(80px) !important;
+}
