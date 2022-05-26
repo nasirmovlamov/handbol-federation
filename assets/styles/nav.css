@@ -1,0 +1,17 @@
+@media screen and (min-width: 1280px) {
+    .ahf-nav:hover > .ahf-nav-content, 
+    .klublar-nav:hover > .klublar-nav-content,
+    .qaydalar-nav:hover > .qaydalar-nav-content,
+    .galery-nav:hover > .galery-nav-content,
+    .arxiv-nav:hover > .arxiv-nav-content,
+    .kishiler-nav:hover > .kishiler-content,
+    .qadinlar-nav:hover > .qadinlar-content {
+    display: flex;
+    }
+
+    .search-form-active{
+        display: flex;
+    }
+}
+
+

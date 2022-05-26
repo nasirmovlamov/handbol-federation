@@ -1,73 +1,192 @@
+<header class="z-50 relative w-full h-20 border-b border-white border-solid shadow-sm shadow-gray-600 flex  items-center justify-center bg-[#2F3B59] xl:px-0 px-4">
+    <div class="z-30 w-full xl:w-320 flex justify-between items-center h-full p-5 xl:p-0 bg-[#2F3B59]">
+        <button class="menubtn xl:hidden">
+            <img src="/assets/media/icons/menu.png" alt="">
+        </button>
+        
+        <a href="#">
+            <img src="/assets/media/logos/logo.png" class="w-14 xl:w-auto"  alt="">
+        </a>
+        
+        <div class="hidden xl:flex gap-x-8 ml-10">
+            <div>
+                <div>
+                    <div class="flex items-center justify-center gap-x-1">
+                        <span class="text-sm text-white">AHF haqqında</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                </div>
 
-    <header class="relative w-full h-20 border-b border-white flex  items-center justify-center bg-[#2E3A59] xl:px-0 px-4">
-        <div class="w-full xl:w-320 flex justify-between items-center h-full p-5 xl:p-0">
-            <button class="xl:hidden">
-                <img src="/assets/media/icons/menu.png" alt="">
-            </button>
+            </div>
+            <div>
+                <div>
+                    <div class="flex items-center justify-center gap-x-1">
+                        <span class="text-sm text-white">Klublar</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="flex items-center justify-center gap-x-1">
+                        <span class="text-sm text-white">Handboll qaydaları</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                </div>
+            </div>
             
-            <a href="#">
-                <img src="/assets/media/logos/logo.png" class="w-14 xl:w-auto"  alt="">
+            <a href="#" class="text-white text-sm">
+                Oyun təqvimi
             </a>
-            
-            <div class="hidden xl:flex gap-x-8 ml-10">
+
+            <a href="#" class="text-white text-sm">
+                Xəbərlər
+            </a>
+
+            <div>
                 <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-sm text-white">AHF haqqında</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    <div class="flex items-center justify-center gap-x-1">
+                        <span class="text-white text-sm">Qalereya</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="flex items-center justify-center gap-x-1">
+                        <span class="text-white text-sm">Arxiv</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="text-white text-sm">
+                Əlaqə
+            </a>
+        </div>
+
+        <button >
+            <img src="/assets/media/icons/search.png" alt="">
+        </button>
+    </div>
+
+    <div class="w-full z-20 menu absolute top-0 -translate-y-full xl:hidden  flex flex-col p-6 gap-4 bg-[#2F3A58]">
+        <div class="flex flex-col gap-2">
+            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <span>AHF Haqqında </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+            </button>
+            <div class="ml-2 collapse" id="collapseExample">
+                <a href="#">
+                    <div class="block ">
+                        - Haqqında
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <span>Klublar </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+            </button>
+            <div class="collapse" id="collapseExample2">
+                <div class="ml-2 flex flex-col gap-1">
+                    <div class="flex flex-col gap-2">
+                        <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleKishiler" aria-expanded="false" aria-controls="collapseExample">
+                            <span>Kişilər </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                        </button>
+                        <div class="ml-2 collapse" id="collapseExampleKishiler">
+                            <a href="#">
+                                <div class="block ">
+                                    - Klub 1
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block ">
+                                    - Klub 2
+                                </div>
+                            </a>
                         </div>
                     </div>
 
-                </div>
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-sm text-white">Klublar</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-sm text-white">Handboll qaydaları</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    <div class=" flex flex-col gap-2">
+                        <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQadinlar" aria-expanded="false" aria-controls="collapseExample">
+                            <span>Qadınlar </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                        </button>
+                        <div class="ml-2  collapse" id="collapseExampleQadinlar">
+                            <a href="#">
+                                <div class="block ">
+                                    - Klub 1
+                                </div>
+                            </a>
+                            
+                            <a href="#">
+                                <div class="block ">
+                                    - Klub 2
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 
-                <a href="#" class="text-white text-sm">
-                    Oyun təqvimi
-                </a>
-
-                <a href="#" class="text-white text-sm">
-                    Xəbərlər
-                </a>
-
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-white text-sm">Qalereya</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-white text-sm">Arxiv</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#" class="text-white text-sm">
-                    Əlaqə
-                </a>
             </div>
-
-            <button >
-                <img src="/assets/media/icons/search.png" alt="">
-            </button>
         </div>
-    </header>
+
+
+        <div class="flex flex-col gap-2">
+            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <span>Handbol Qaydaları </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+            </button>
+            <div class="ml-2 collapse" id="collapseExample4">
+                <a href="#">
+                    <div class="block ">
+                        - Test
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <a href="">
+            <div>Oyun təqvimi </div>
+        </a>
+
+        <a href="">
+            <div>Xəbərlər </div>
+        </a>
+
+
+        <div class="flex flex-col gap-2">
+            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQalereya" aria-expanded="false" aria-controls="collapseExampleQalereya">
+                <span>Qalereya</span> <img src="/assets/media/icons/arrow-right.png" alt="">
+            </button>
+            <div class="ml-2 collapse" id="collapseExampleQalereya">
+                <a href="#">
+                    <div class="block ">
+                        - Test
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="flex flex-col gap-2">
+            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleArxiv" aria-expanded="false" aria-controls="collapseExampleArxiv">
+                <span>Arxiv</span> <img src="/assets/media/icons/arrow-right.png" alt="">
+            </button>
+            <div class="ml-2 collapse" id="collapseExampleArxiv">
+                <a href="#">
+                    <div class="block ">
+                        - Test
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <a href="">
+            <div>Əlaqə </div>
+        </a>
+    </div>
+</header>

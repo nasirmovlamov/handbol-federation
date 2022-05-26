@@ -62,8 +62,8 @@ module.exports = {
   
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
+        'xl1.2': '1330px',
+        'xl1.5':'1430px',
         // => @media (min-width: 1536px) { ... }
       }
     },

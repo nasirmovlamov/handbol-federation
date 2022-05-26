@@ -1,7 +1,7 @@
 @import url(./reset.css);
 @import url(./tailwind-build.css);
 @import url(./typography.css);
-
+@import url(./nav.css);
 html {
     font-size: 16px;
     color: white;
@@ -42,6 +42,22 @@ a {
 }
 
 
-.menu-show{
+.menu-active{
     transform: translateY(80px) !important;
 }
+
+
+.search-menu-active{
+    transform: translateY(80px) !important;
+}
+
+header {
+    position:sticky !important;
+    top: 0 !important;
+}
+.menu , .searchmenu{
+    transition: transform 0.5s;
+    height: 100vh;
+    position: fixed;
+}
+
