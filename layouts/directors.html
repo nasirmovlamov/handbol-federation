@@ -54,12 +54,12 @@
                 <div class="relative klublar-nav">
                     <div class="flex items-center justify-center gap-x-1  hover:text-[#E7535C] cursor-pointer">
                         <span class="text-sm ">Klublar</span> 
-                        <img src="../assets/media/icons/arrowdown.png" width="14px" alt="">
+                        <img src="./assets/media/icons/arrowdown.png" width="14px" alt="">
                     </div>
                     <div class="klublar-nav-content hidden absolute bg-white top-11 text-[#1A1F49] flex-col text-sm w-28 -left-2"> 
                         <div class="kishiler-nav">
                             <div class="pb-0 p-4  flex justify-between items-center hover:text-[#E7535C] cursor-pointer">
-                                <span>Kişilər</span>  <img src="../assets/media/icons/arrow-right-black.png" alt="">
+                                <span>Kişilər</span>  <img src="./assets/media/icons/arrow-right-black.png" alt="">
                             </div>
                             <div class="kishiler-content hidden w-40 border-l border-solid border-gray-100 absolute left-28 bg-white     flex-col p-4 top-0 gap-4">
                                 <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
@@ -70,7 +70,7 @@
 
                         <div class="qadinlar-nav">
                             <div class="p-4 flex justify-between items-center hover:text-[#E7535C] cursor-pointer">
-                                <span>Qadınlar</span>  <img src="../assets/media/icons/arrow-right-black.png" alt="">
+                                <span>Qadınlar</span>  <img src="./assets/media/icons/arrow-right-black.png" alt="">
                             </div>
                             <div class="qadinlar-content hidden w-40 border-l border-solid border-gray-100 absolute left-28 bg-white flex-col p-4 top-0 gap-4">
                                 <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
@@ -170,15 +170,26 @@
         <div class="w-full z-20 menu absolute -top-1 -translate-y-full xl:hidden  flex flex-col p-6 gap-4 bg-[#2F3A58]">
             <div class="flex flex-col gap-2">
                 <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <span>AHF Haqqında </span> <img src="../assets/media/icons/arrow-right.png" alt="">
+                    <span>AHF Haqqında</span> <img src="../assets/media/icons/arrow-right.png" alt="">
                 </button>
                 <div class="ml-2 collapse" id="collapseExample">
-                    <a href="#">
-                        <div class="block ">
-                            - Haqqında
+                    <a href="layouts/about.html">
+                        <div class="block p-2">
+                            - Haqqında 
                         </div>
                     </a>
                     
+                    <a href="layouts/ahf-history.html">
+                        <div class="block p-2">
+                            - AHF Tarixi
+                        </div>
+                    </a>
+
+                    <a href="layouts/directors.html">
+                        <div class="block p-2">
+                            - AHF Tarixi
+                        </div>
+                    </a>
                 </div>
             </div>
     
@@ -189,38 +200,38 @@
                 <div class="collapse" id="collapseExample2">
                     <div class="ml-2 flex flex-col gap-1">
                         <div class="flex flex-col gap-2">
-                            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleKishiler" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="p-2 flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleKishiler" aria-expanded="false" aria-controls="collapseExample">
                                 <span>Kişilər </span> <img src="../assets/media/icons/arrow-right.png" alt="">
                             </button>
                             <div class="ml-2 collapse" id="collapseExampleKishiler">
-                                <a href="#">
-                                    <div class="block ">
-                                        - Klub 1
+                                <a href="/layouts/clubs.html">
+                                    <div class="block p-2">
+                                        - Azeryol
                                     </div>
                                 </a>
                                 
-                                <a href="#">
-                                    <div class="block ">
-                                        - Klub 2
+                                <a href="/layouts/clubs.html">
+                                    <div class="block p-2">
+                                        - Azeryol
                                     </div>
                                 </a>
                             </div>
                         </div>
     
                         <div class=" flex flex-col gap-2">
-                            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQadinlar" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="p-2 flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQadinlar" aria-expanded="false" aria-controls="collapseExample">
                                 <span>Qadınlar </span> <img src="../assets/media/icons/arrow-right.png" alt="">
                             </button>
                             <div class="ml-2  collapse" id="collapseExampleQadinlar">
-                                <a href="#">
-                                    <div class="block ">
-                                        - Klub 1
+                                <a href="/layouts/clubs.html">
+                                    <div class="block p-2">
+                                        - Azeryol
                                     </div>
                                 </a>
                                 
-                                <a href="#">
-                                    <div class="block ">
-                                        - Klub 2
+                                <a href="/layouts/clubs.html">
+                                    <div class="block p-2">
+                                        - Azeryol
                                     </div>
                                 </a>
                             </div>
@@ -236,8 +247,8 @@
                     <span>Handbol Qaydaları </span> <img src="../assets/media/icons/arrow-right.png" alt="">
                 </button>
                 <div class="ml-2 collapse" id="collapseExample4">
-                    <a href="#">
-                        <div class="block ">
+                    <a href="index.html">
+                        <div class="block p-2">
                             - Test
                         </div>
                     </a>
@@ -245,11 +256,11 @@
                 </div>
             </div>
             
-            <a href="">
+            <a href="/layouts/calendar.html">
                 <div>Oyun təqvimi </div>
             </a>
     
-            <a href="">
+            <a href="/layouts/news.html">
                 <div>Xəbərlər </div>
             </a>
     
@@ -259,8 +270,8 @@
                     <span>Qalereya</span> <img src="../assets/media/icons/arrow-right.png" alt="">
                 </button>
                 <div class="ml-2 collapse" id="collapseExampleQalereya">
-                    <a href="#">
-                        <div class="block ">
+                    <a href="/layouts/galery.html">
+                        <div class="block p-2">
                             - Test
                         </div>
                     </a>
@@ -273,8 +284,8 @@
                     <span>Arxiv</span> <img src="../assets/media/icons/arrow-right.png" alt="">
                 </button>
                 <div class="ml-2 collapse" id="collapseExampleArxiv">
-                    <a href="#">
-                        <div class="block ">
+                    <a href="/layouts/arxiv.html">
+                        <div class="block p-2">
                             - Test
                         </div>
                     </a>
@@ -282,7 +293,7 @@
                 </div>
             </div>
     
-            <a href="">
+            <a href="/layouts/contacts.html">
                 <div>Əlaqə </div>
             </a>
         </div>
@@ -297,7 +308,6 @@
             </form>
         </div>
     </header>
-
     <div class="px-4 xl:px-0 w-full xl:w-320 mx-auto flex flex-col gap-y-6 mt-14 mb-14">
         <h1 class="text-4xl font-bold text-[#343434]">Rəhbərlik</h1>
         <div class="flex justify-center gap-x-16 gap-y-16 flex-wrap ">
