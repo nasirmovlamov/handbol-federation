@@ -8,76 +8,285 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 <body>
     
-    <header class="relative w-full h-20 border-b border-white flex  items-center justify-center bg-[#2E3A59] xl:px-0 px-4">
-        <div class="w-full xl:w-320 flex justify-between items-center h-full p-5 xl:p-0">
-            <button class="xl:hidden">
+    <header class="z-50 relative w-full h-20 border-b border-white border-solid shadow-sm shadow-gray-600 flex  items-center justify-center bg-[#2F3B59] xl:px-0 px-4">
+        <div class="z-30 w-full xl:w-320 flex justify-between items-center h-full p-5 xl:p-0 bg-[#2F3B59]">
+            <button class="menubtn xl:hidden">
                 <img src="/assets/media/icons/menu.png" alt="">
             </button>
             
-            <a href="#">
+            <a href="/layouts/index.html">
                 <img src="/assets/media/logos/logo.png" class="w-14 xl:w-auto"  alt="">
             </a>
             
-            <div class="hidden xl:flex gap-x-8 ml-10">
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-sm text-white">AHF haqqında</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
+            <div class=" hidden self-end h-11 xl:flex gap-x-8 mr-auto ml-10">
+                <div class="relative ahf-nav">
+                    <div class=" flex items-center justify-center gap-x-1 hover:text-[#E7535C] cursor-pointer">
+                        <span class="text-sm ">AHF haqqında</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
                     </div>
+                    <div class="ahf-nav-content  hidden  absolute bg-white top-11 text-[#1A1F49] flex-col text-sm p-4 gap-4 w-28 -left-2"> 
+                        <a href="/layouts/about.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Haqqımızda </span>
+                            </div>
+                        </a>
+                        <a href="/layouts/ahf-history.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Tarix </span> 
+                            </div>
+                        </a>
+                        <a href="/layouts/directors.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Rəhbərlik </span> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-                </div>
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-sm text-white">Klublar</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                <div class="relative klublar-nav">
+                    <div class="flex items-center justify-center gap-x-1  hover:text-[#E7535C] cursor-pointer">
+                        <span class="text-sm ">Klublar</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                    <div class="klublar-nav-content hidden absolute bg-white top-11 text-[#1A1F49] flex-col text-sm w-28 -left-2"> 
+                        <div class="kishiler-nav">
+                            <div class="pb-0 p-4  flex justify-between items-center hover:text-[#E7535C] cursor-pointer">
+                                <span>Kişilər</span>  <img src="/assets/media/icons/arrow-right-black.png" alt="">
+                            </div>
+                            <div class="kishiler-content hidden w-40 border-l border-solid border-gray-100 absolute left-28 bg-white     flex-col p-4 top-0 gap-4">
+                                <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
+                                <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
+                                <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
+                            </div>
                         </div>
+
+                        <div class="qadinlar-nav">
+                            <div class="p-4 flex justify-between items-center hover:text-[#E7535C] cursor-pointer">
+                                <span>Qadınlar</span>  <img src="/assets/media/icons/arrow-right-black.png" alt="">
+                            </div>
+                            <div class="qadinlar-content hidden w-40 border-l border-solid border-gray-100 absolute left-28 bg-white flex-col p-4 top-0 gap-4">
+                                <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
+                                <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
+                                <a href="/layouts/clubs.html"><div class="hover:text-[#E7535C]">Azeryol</div></a> 
+                            </div>
+                        </div>
+                        
+             
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-sm text-white">Handboll qaydaları</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
+
+                <div class="relative qaydalar-nav">
+                    <div class="flex items-center justify-center gap-x-1  hover:text-[#E7535C] cursor-pointer">
+                        <span class="text-sm ">Handboll qaydaları</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                    <div class="qaydalar-nav-content hidden absolute bg-white top-11 text-[#1A1F49] flex-col text-sm p-4 gap-4 w-full "> 
+                        <a href="/layouts/index.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Link 1</span>
+                            </div>
+                        </a>
+                        <a href="/layouts/index.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Link 1</span> 
+                            </div>
+                        </a>
                     </div>
                 </div>
                 
-                <a href="#" class="text-white text-sm">
+                <a href="/layouts/calendar.html" class="text-white text-sm  hover:text-[#E7535C] ">
                     Oyun təqvimi
                 </a>
 
-                <a href="#" class="text-white text-sm">
+                <a href="/layouts/news.html" class="text-white text-sm  hover:text-[#E7535C] ">
                     Xəbərlər
                 </a>
 
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-white text-sm">Qalereya</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
+                <div class="relative galery-nav">
+                    <div class="flex items-center justify-center gap-x-1  hover:text-[#E7535C] cursor-pointer">
+                        <span class="text-sm">Qalereya</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="flex items-center justify-center gap-x-1">
-                            <span class="text-white text-sm">Arxiv</span> 
-                            <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
-                        </div>
+                    <div class="hidden galery-nav-content  absolute bg-white top-11 text-[#1A1F49] flex-col text-sm p-4 gap-4 w-28 "> 
+                        <a href="/layouts/galery.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Link 1</span>
+                            </div>
+                        </a>
+                        <a href="/layouts/galery.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Link 1</span> 
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-                <a href="#" class="text-white text-sm">
+                <div  class="relative z-10 arxiv-nav">
+                    <div class="flex items-center justify-center gap-x-1  hover:text-[#E7535C] cursor-pointer">
+                        <span class="text-sm">Arxiv</span> 
+                        <img src="/assets/media/icons/arrowdown.png" width="14px" alt="">
+                    </div>
+                    <div class="hidden arxiv-nav-content absolute bg-white top-11 text-[#1A1F49] flex-col text-sm p-4 gap-4 w-28 -left-2"> 
+                        <a href="/layouts/arxiv.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Link 1</span>
+                            </div>
+                        </a>
+                        <a href="/layouts/arxiv.html">
+                            <div class="hover:text-[#E7535C] cursor-pointer">
+                                <span> Link 1</span> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/layouts/contacts.html" class="text-white text-sm  hover:text-[#E7535C] ">
                     Əlaqə
                 </a>
             </div>
 
-            <button >
-                <img src="/assets/media/icons/search.png" alt="">
-            </button>
+            <div class="relative h-6">
+                <button class="searchbtn ">
+                    <img src="/assets/media/icons/search.png" alt="">
+                </button>
+                <form class=" hidden searchform search-input  -right-4  mt-1  absolute bg-white top-12 text-[#1A1F49]  text-sm "> 
+                    <input type="text" class="w-64 p-4 " placeholder="Axtarış">
+                    <button class="bg-[#E7535C] w-10 flex justify-center items-center">
+                        <img src="/assets/media/icons/search.png" alt="">
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="w-full z-20 menu absolute -top-1 -translate-y-full xl:hidden  flex flex-col p-6 gap-4 bg-[#2F3A58]">
+            <div class="flex flex-col gap-2">
+                <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <span>AHF Haqqında </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                </button>
+                <div class="ml-2 collapse" id="collapseExample">
+                    <a href="#">
+                        <div class="block ">
+                            - Haqqında
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+    
+            <div class="flex flex-col gap-2">
+                <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    <span>Klublar </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                </button>
+                <div class="collapse" id="collapseExample2">
+                    <div class="ml-2 flex flex-col gap-1">
+                        <div class="flex flex-col gap-2">
+                            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleKishiler" aria-expanded="false" aria-controls="collapseExample">
+                                <span>Kişilər </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                            </button>
+                            <div class="ml-2 collapse" id="collapseExampleKishiler">
+                                <a href="#">
+                                    <div class="block ">
+                                        - Klub 1
+                                    </div>
+                                </a>
+                                
+                                <a href="#">
+                                    <div class="block ">
+                                        - Klub 2
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class=" flex flex-col gap-2">
+                            <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQadinlar" aria-expanded="false" aria-controls="collapseExample">
+                                <span>Qadınlar </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                            </button>
+                            <div class="ml-2  collapse" id="collapseExampleQadinlar">
+                                <a href="#">
+                                    <div class="block ">
+                                        - Klub 1
+                                    </div>
+                                </a>
+                                
+                                <a href="#">
+                                    <div class="block ">
+                                        - Klub 2
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+    
+            <div class="flex flex-col gap-2">
+                <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                    <span>Handbol Qaydaları </span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                </button>
+                <div class="ml-2 collapse" id="collapseExample4">
+                    <a href="#">
+                        <div class="block ">
+                            - Test
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <a href="">
+                <div>Oyun təqvimi </div>
+            </a>
+    
+            <a href="">
+                <div>Xəbərlər </div>
+            </a>
+    
+    
+            <div class="flex flex-col gap-2">
+                <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleQalereya" aria-expanded="false" aria-controls="collapseExampleQalereya">
+                    <span>Qalereya</span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                </button>
+                <div class="ml-2 collapse" id="collapseExampleQalereya">
+                    <a href="#">
+                        <div class="block ">
+                            - Test
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-2">
+                <button class="flex items-center gap-2 text-left " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleArxiv" aria-expanded="false" aria-controls="collapseExampleArxiv">
+                    <span>Arxiv</span> <img src="/assets/media/icons/arrow-right.png" alt="">
+                </button>
+                <div class="ml-2 collapse" id="collapseExampleArxiv">
+                    <a href="#">
+                        <div class="block ">
+                            - Test
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+    
+            <a href="">
+                <div>Əlaqə </div>
+            </a>
+        </div>
+
+        
+        <div class="box-border searchmenu w-full z-20 menu absolute -top-1  -translate-y-full xl:hidden  flex-col p-6 gap-4 bg-[#2F3A58]">
+            <form class="w-full"> 
+                <input type="text" class="w-full p-4 bg-transparent border-b" placeholder="Axtarış">
+                <button class="bg-[#E7535C] flex justify-center items-center mt-4 py-3 px-10">
+                    Axtar
+                </button>
+            </form>
         </div>
     </header>
 
@@ -104,48 +313,48 @@
                     All Right Reserved AHF
                 </p>
             </div>
-    
+
             
-    
+
             <div class="flex flex-wrap gap-x-28 pt-4 font-bold">
                 <div class="flex flex-col gap-4">
-                    <a href="#"><p>AHF haqqında</p></a>
-                    <a href="#"><p>Klublar</p></a>
-                    <a href="#"><p>Handball qaydaları</p></a>
-                    <a href="#"><p>Oyun təqvimi</p></a>
+                    <a href="/layouts/ahf-history.html"><p>AHF haqqında</p></a>
+                    <a href="/layouts/clubs.html"><p>Klublar</p></a>
+                    <a href="/layouts/index.html"><p>Handball qaydaları</p></a>
+                    <a href="/layouts/calendar.html"><p>Oyun təqvimi</p></a>
                 </div>
-    
+
                 <div class="flex flex-col gap-4">
-                    <a href="#"><p>Xəbərlər</p></a>
-                    <a href="#"><p>Qalereya</p></a>
-                    <a href="#"><p>Arxiv</p></a>
-                    <a href="#"><p>Əlaqə</p></a>
+                    <a href="/layouts/news.html"><p>Xəbərlər</p></a>
+                    <a href="/layouts/galery.html"><p>Qalereya</p></a>
+                    <a href="/layouts/arxiv.html"><p>Arxiv</p></a>
+                    <a href="/layouts/contacts.html"><p>Əlaqə</p></a>
                 </div>
-    
+
                 <div class="flex flex-col gap-6">
                     <a href="#"><p>Gizlilik Siyasəti</p></a>
                     <div class="flex gap-x-4">
-                        <a href="#">
+                        <a href="/layouts/index.html">
                             <div class="w-10 h-10 grid place-content-center border-solid rounded-full border-pink-700 border-2">
                                 <img src="/assets/media/icons/footer-instagram.png" alt="">
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/layouts/index.html">
                             <div class="w-10 h-10 grid place-content-center border-solid rounded-full border-pink-700 border-2">
                                 <img src="/assets/media/icons/footer-facebook.png" alt="">
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/layouts/index.html">
                             <div class="w-10 h-10 grid place-content-center border-solid rounded-full border-pink-700 border-2">
                                 <img src="/assets/media/icons/footer-youtube.png" alt="">
                             </div>
                         </a>
                     </div>
                 </div>
-    
+
             </div>
             
-    
+
         </div>
     </footer>
 </body>
