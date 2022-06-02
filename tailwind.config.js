@@ -4,6 +4,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+        'brown':'#343434',
+        'c-pink': '#E7535C'
+      },
       spacing: {
           '82': '17rem',
           '84': '18rem',
