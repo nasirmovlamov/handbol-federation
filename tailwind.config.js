@@ -1,14 +1,10 @@
 module.exports = {
   content:[
     "./layouts/**/*.{html,js}" ,
+    './*.{html,js}'
   ],
   theme: {
     extend: {
-      colors: {
-        'regal-blue': '#243c5a',
-        'brown':'#343434',
-        'c-pink': '#E7535C'
-      },
       spacing: {
           '82': '17rem',
           '84': '18rem',
@@ -57,19 +53,11 @@ module.exports = {
       screens: {
         'xs': '480px',
         'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-  
         'md': '768px',
-        // => @media (min-width: 768px) { ... }
-  
         'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-  
         'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
         'xl1.2': '1330px',
         'xl1.5':'1430px',
-        // => @media (min-width: 1536px) { ... }
       }
     },
     

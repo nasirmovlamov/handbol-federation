@@ -3,9 +3,7 @@
 @import url(./typography.css);
 @import url(./nav.css);
 
-body {
-    background-color: #FEFEFF;
-}
+
 html {
     font-size: 16px;
     color: white;
